@@ -1,34 +1,41 @@
-import { styles } from "style-module.css";
-import { Badge, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Badge, Container, Nav, Navbar } from "react-bootstrap";
+import styles from "./style.module.css";
 
 const Header = () => {
   return (
- <header>
-    <h1>our <Badge bg="info">Ecomm</Badge> </h1>
-       {/* <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar> */}
- </header>
+    <header>
+      <div>
+        <h3>
+          our <Badge bg="success">Ecom</Badge>{" "}
+        </h3>
+      </div>
+      {/* basket */}
+
+      <div>
+        <Navbar
+          expand="lg"
+          className="rounded bg-body-tertiary"
+          bg="dark"
+          data-bs-theme="dark"
+        >
+          <Container>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#link">Categories</Nav.Link>
+                <Nav.Link href="#link">About</Nav.Link>
+              </Nav>
+
+              <Nav>
+                <Nav.Link href="#home">Logn</Nav.Link>
+                <Nav.Link href="#link">Register</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+    </header>
   );
 };
 
