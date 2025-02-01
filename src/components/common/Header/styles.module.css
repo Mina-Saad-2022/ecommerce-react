@@ -1,0 +1,19 @@
+.headerContainer {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.headerLogo {
+  color: inherit;
+  text-decoration: inherit;
+  margin: 0;
+}
+.headerLogo h3 {
+  margin: 0;
+  display: flex;
+}
+.headerLogo h3 span {
+  display: block;
+  margin-right: 5px;
+}
